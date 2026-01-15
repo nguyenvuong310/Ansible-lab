@@ -100,3 +100,7 @@ changed: [host1]
 PLAY RECAP *********************
 host1              : ok=7    changed=4    unreachable=0    failed=0
 ```
+Kết quả:
+![alt text](../images/step06.png)
+
+![alt text](../images/step06%20(2).png)

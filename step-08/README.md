@@ -134,3 +134,10 @@ While this sounds like a lot of work, it isn't. Remember you can use variables
 almost everywhere, so it's easy to make this a general playbook for apache,
 and use it everywhere to deploy your virtualhosts. Write it once, use it
 everywhere.
+
+![altx text](../images/register-when-rollback.png)
+
+Note: 
+- Kiểm tra cấu hình Apache trước khi khởi động lại server (`apache2ctl configtest`). 
+- Sử dụng conditionals (`when `) và `registry` để xử lý lỗi.
+- `Rollback` nếu cấu hình không hợp lệ, giúp server khỏi crash.

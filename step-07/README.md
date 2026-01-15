@@ -104,3 +104,5 @@ As you can see since `apache2ctl` returns with an exit code of 1 when it fails,
 ansible is aware of it and stops processing. Great!
 
 Mmmh, not so great in fact... Our virtual host has been added anyway. Any subsequent apache restart will complain about our config and bail out. So we need a way to catch failures and revert back.
+
+![alt text](../images/error1.png)

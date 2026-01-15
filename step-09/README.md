@@ -32,3 +32,14 @@
 - Frontend can communicate with the backend
 - Backend can connect to the database
 - Application accessible and working on the virtual host
+
+![alt txt](../images/step09.png)
+
+![alt txt](../images/admin.png)
+
+![alt txt](../images/client.png)
+
+![alt txt](../images/connectdb.png)
+
+link code github: https://github.com/fhpthh/fhcoffee_v2
+

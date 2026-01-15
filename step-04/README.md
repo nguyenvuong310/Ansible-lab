@@ -33,3 +33,7 @@ debian
 ```
 
 Grouping, of course, leverages configuration mutualization.
+
+![alt](../images/hosts04.png)
+
+![alt](../images/ping04.png)

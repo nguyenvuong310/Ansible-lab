@@ -43,12 +43,16 @@ $ sudo apt install ansible
 # Check the installed Ansible version
 ansible --version
 
+![check version](../images/ansible-version.png)
+
 #Verify Ansible connectivity using the ping module
 ansible -m ping localhost
 ```
 
 ![alt text](../images/ansible-adhoc.png)
 
+Kết quả: 
+![alt text](../images/ansible-ping.png)
 ## Reference
 
 1. Ansible, "Installing Ansible on specific operating systems", https://docs.ansible.com/projects/ansible/latest/installation_guide/installation_distros.html

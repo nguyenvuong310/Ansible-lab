@@ -68,6 +68,8 @@ changed: [host1]
 PLAY RECAP *********************
 host1              : ok=2    changed=1    unreachable=0    failed=0
 ```
+Kết quả:
+![alt text](../images/step05.png)
 
 Note: you might see a cow passing by if you have `cowsay` installed. You can
 get rid of it with `export ANSIBLE_NOCOWS="1"` if you don't like it.

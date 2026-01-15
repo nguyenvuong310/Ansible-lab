@@ -26,6 +26,8 @@ host0 | success | rc=0 >>
 Linux host0 3.2.0-23-generic-pae #36-Ubuntu SMP Tue Apr 10 22:19:09 UTC 2012 i686 i686 i386 GNU/Linux
 ```
 
+kết quả:
+![alt text](../images/shell-03.png)
 Cool!
 
 ### Copy module
@@ -53,6 +55,9 @@ host0 | success >> {
     "state": "file"
 }
 ```
+
+kết quả:
+![alt text](../images/copy-03.png)
 
 Ansible (more accurately _copy_ module executed on the node) replied back a
 bunch of useful information in JSON format. We'll see how that can be used
@@ -83,6 +88,8 @@ return:
     host0 | success | rc=0 >>
     DISTRIB_RELEASE=14.04
 
+kết quả:
+![alt text](../images/shell-all.png)
 ## Many more facts
 
 That was easy. However, It would quickly become cumbersome if we
@@ -114,6 +121,9 @@ replies with lots of information:
 "verbose_override": true
 ```
 
+kết quả:
+![alt text](../images/setup.png)
+
 It's been truncated for brevity, but you can find many interesting bits in the
 returned data. You may also filter returned keys, in case you're looking for
 something specific.
@@ -139,6 +149,7 @@ host0 | success >> {
     "changed": false
 }
 ```
+![alt text](../images/filter-setup.png)
 
 Notice that hosts replied in different order compared to the previous output.
 This is because ansible parallelizes communications with hosts!
@@ -155,3 +166,6 @@ to select hosts](http://docs.ansible.com/intro_patterns.html):
   host1
 - `host*` would run on all hosts starting with 'host' and ending
   with '' (just like a shell glob too)
+
+  ![alt text](../images/selecthost.png)
+
